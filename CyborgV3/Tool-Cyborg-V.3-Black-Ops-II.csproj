@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E9296917-7034-4228-B0A1-7B19E273FA53}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>Tool Cyborg V.3 Black Ops II</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>10_image.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="PS3Lib">
+      <HintPath>C:\Users\HP\Desktop\Exo&amp;OldModz95\CyborgV3\Application Files\Tool Cyborg V.3 Black Ops II_3_0_0_2\a\PS3Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="LogIn Theme Dll By xVenoxi">
+      <HintPath>C:\Users\HP\Desktop\Exo&amp;OldModz95\CyborgV3\Application Files\Tool Cyborg V.3 Black Ops II_3_0_0_2\a\LogIn Theme Dll By xVenoxi.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\HP\Desktop\Exo&amp;OldModz95\CyborgV3\Application Files\Tool Cyborg V.3 Black Ops II_3_0_0_2\a\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="theme">
+      <HintPath>C:\Users\HP\Desktop\Exo&amp;OldModz95\CyborgV3\Application Files\Tool Cyborg V.3 Black Ops II_3_0_0_2\a\theme.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Encoder.cs" />
+    <Compile Include="FIRST_RTM_TOOL\End_Game.cs" />
+    <Compile Include="FIRST_RTM_TOOL\Variables.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="MonoFlat\MonoFlat_Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_HeaderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_NotificationBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_Separator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_SocialButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_ThemeContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\MonoFlat_TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonoFlat\RoundRectangle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PS3.cs" />
+    <Compile Include="RPC_BO22\RPC_BO2.cs" />
+    <Compile Include="Tool_Cyborg_BO2_1._19\Lib.cs" />
+    <Compile Include="Tool_Cyborg_BO2_1._19\Methods.cs" />
+    <Compile Include="Tool_Cyborg_BO2_1._19\Offsets.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II.Properties\Resources.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II.Properties\Settings.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\aDateTime.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\CyborgV3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\eventArgs.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\NSGroupBox.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\NSTabControl.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\NSTheme.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\Program.cs" />
+    <Compile Include="Tool_Cyborg_V._3_Black_Ops_II\zombiechangename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial_For_YouTube\RPC.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tool_Cyborg_V._3_Black_Ops_II.Properties\Resources.resx" />
+    <EmbeddedResource Include="Tool_Cyborg_V._3_Black_Ops_II\CyborgV3.resx" />
+    <EmbeddedResource Include="Tool_Cyborg_V._3_Black_Ops_II\zombiechangename.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="10_image.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
